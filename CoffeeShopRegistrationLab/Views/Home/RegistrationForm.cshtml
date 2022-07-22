@@ -1,0 +1,101 @@
+﻿
+
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+</head>
+
+<body style="
+        font-family: 'Boogaloo', cursive;
+        font-size: 1.5rem;
+  
+    ">
+    <style>
+        body {
+            background-image: url('https://images.squarespace-cdn.com/content/v1/5e8ca4dd92f5071d816ac68f/1586531999482-01SNHO9LTMHNKP9OIM8J/FFSCirclesFilter-04.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
+    <div>
+
+        <h2>Registration Form</h2>
+
+        <form asp-controller="Home" asp-action="Result" method="post">
+            <label for="FirstName">First Name:</label><br>
+            <input type="text" id="FirstName" name="FirstName"><br>
+
+            <label for="LastName">Last Name:</label><br>
+            <input type="text" id="LastName" name="LastName"><br>
+
+            <label for="Email">Email:</label><br>
+
+            <input type="Email" name="Email" /><br />
+
+            <label for="Password">Create a Password:</label><br>
+            <input type="Password" name="Password"><br />
+            <p></p>
+
+            <div style="background-color: transparent"
+                 width: 50%;>
+
+                <p>Are you a new member?</p>
+                <input type="radio" id="Yes" name="newMember" value="Yes">
+                <label for="Yes">Yes</label><br>
+                <input type="radio" id="No" name="newMember" value="No">
+                <label for="No">No</label><br>
+                <p></p>
+
+
+                <p>How do you like your coffee</p>
+                <input type="radio" id="Dark" name="coffeeChoice" value="Dark">
+                <label for="Dark">Dark</label><br>
+                <input type="radio" id="Medium" name="coffeeChoice" value="Medium">
+                <label for="Medium">Medium</label><br>
+                <input type="radio" id="Decaf" name="coffeeChoice" value="Decaf">
+                <label for="Decaf">Decaf</label><br>
+                <input type="radio" id="Iced Coffee" name="coffeeChoice" value="Iced Coffee">
+                <label for="Iced Coffee">Iced Coffee</label><br>
+                <input type="radio" id="Tea for me" name="coffeeChoice" value="Tea for me">
+                <label for="Tea for me">Tea for me</label><br>
+                <p></p>
+                <p>Are you interested in getting offers in your email?</p>
+                <input type="radio" id="Yes" name="newMember" value="Yes">
+                <label for="Yes">Yes</label><br>
+                <input type="radio" id="No" name="newMember" value="No">
+                <label for="No">No</label><br>
+                <p></p>
+                <p></p>
+
+
+
+            </div>
+            <input type="Submit" />
+        </form>
+
+
+
+
+    </div>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
